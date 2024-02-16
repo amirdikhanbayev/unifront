@@ -1,0 +1,48 @@
+.header-data{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Eastman', sans-serif;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 80px;
+    font-family: 'Eastman', sans-serif;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Eastman', sans-serif;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Eastman', sans-serif;
+}
+
+.pagination button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Eastman', sans-serif;
+}
+
+.pagination p {
+    margin: 0 10px;
+}

@@ -4,13 +4,14 @@ import './App.css';
 
 import Catalog from './components/sneakers/Catalog.js';
 import About from './components/sneakers/About';
+import Home from './components/sneakers/Home';
 
 const App = () => {
     return (
         <Router>
             <div>
                 <header className="header">
-                    <Link to="/app" className="link">
+                    <Link to="/" className="link">
                         Home
                     </Link>
                     <Link to="/about" className="link">
@@ -21,16 +22,10 @@ const App = () => {
                     </Link>
                 </header>
                 <Routes>
-                    <Route exact path="/app"  />
+                    <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/catalog" element={<Catalog />} />
                 </Routes>
-                <div className="contact-container">
-                    <h2>Do you want to shop?</h2>
-                    <button>
-                        <Link to="/catalog">Lets shop =)</Link>
-                    </button>
-                </div>
             </div>
         </Router>
     );
